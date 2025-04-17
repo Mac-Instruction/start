@@ -77,3 +77,91 @@ Mac 설정 변경하기
 - [Time Machine](https://support.apple.com/ko-kr/104984)은 모든 파일의 사본을 보관하며 특정 날짜의 시스템 상태를 기억
 
 <br>
+
+---
+
+<br>
+
+기본 단축키
+---
+> 오려두기
+```
+command-X
+```
+
+<br>
+
+> 복사하기
+```
+command-C
+```
+
+> 붙여넣기
+```
+command-V
+```
+
+<br>
+
+> 실행 취소
+```
+command-Z
+```
+
+<br>
+
+> 프린트
+```
+command-P
+```
+
+<br>
+
+> 윈도우 닫기
+```
+command-W
+```
+
+<br>
+
+> 앱 전환하기
+```
+command-tab
+```
+
+<br>
+
+> 앱 종료하기
+```
+command-Q
+```
+
+<br>
+
+> 오른쪽 방향으로 삭제하기 
+```
+fn-delete
+```
+
+<br>
+
+> 파일 찾기
+```
+command-스페이스 바
+```
+
+<br>
+
+> [앱 강제 종료하기](https://support.apple.com/ko-kr/102586)
+```
+option-command-esc
+```
+
+<br>
+
+> [스크린샷 찍기](https://support.apple.com/ko-kr/102646)
+```
+shift-command-3
+```
+
+<br>
