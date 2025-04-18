@@ -44,3 +44,13 @@
 
 Mac 키보드상의 Windows 키
 ---
+|Windows 키|Mac 키|설명|
+|:-:|:-:|-|
+|Alt|Option|é와 같은 특수 문자 입력|
+|제어기<br>Windows 키|Control<br>Command|Control 키를 누른 상태로 클릭하면 단축 메뉴 오픈<br>문서 또는 파일을 저장하려면 Command-S|
+|Home 및 End|Command-왼쪽 화살표 또는 오른쪽 화살표<br>Fn–왼쪽 화살표 또는 오른쪽 화살표|Command-왼쪽 화살표 : 삽입 지점을 현재 줄의 시작으로 이동<br>Command-오른쪽 화살표 : 삽입 지점을 현재 줄의 끝으로 이동<br>Fn–왼쪽 화살표(Home) : 현재 문서의 시작으로 스크롤<br>Fn–오른쪽 화살표(End) : 현재 문서의 끝으로 스크롤|
+|Num Lock|Num Lock<br>Shift-Clear|(일부 앱)숫자 키패드에 있는 키를 누를 때 숫자를 입력할지, 포인터를 이동할지 조절|
+|Scroll Lock|Control-F14<br>(Fn 키를 먼저 길게 눌러야 할 수 있음)|(일부 앱)화살표 키를 누를 때 포인터를 움직일지, 윈도우에서 스크롤할지 조절|
+|화면 프린트|Shift-Command-3<br>Shift-Command-4|화면 캡처<br>Shift-Command-3 : 전체 화면 캡처, Shift-Command-4 : 화면의 일부 캡처|
+
+<br>
