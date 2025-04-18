@@ -15,9 +15,9 @@
 ---
 |No|Title|Link|
 |-|-|-|
-|01|XCode|[바로가기](./dev/01)|
+|01|ECLIPSE|[바로가기](./dev/01)|
 |02|VSCode|[바로가기](./dev/02)|
-|03|ECLIPSE|[바로가기](./dev/03)|
+|03|XCode|[바로가기](./dev/03)|
 |04|IntelliJ|[바로가기](./dev/04)|
 
 <br>
