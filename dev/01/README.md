@@ -1,4 +1,4 @@
-# IDE 설치 - ECLIPSE
+# JAVA
 JAVA 설치(홈페이지) - JDK21
 ---
 ### 1. [Oracle](https://www.oracle.com/kr/java/technologies/downloads/#jdk21-mac) 접속하여 파일 다운로드 및 설치
@@ -275,10 +275,138 @@ brew uninstall <패키지 이름> - 해당 패키지 삭제
 
 <br>
 
+JAVA 설치(jenv) - JDK17
+---
+### 1. jenv 설치 
+- 여러 자바 버전을 이용할 수 있는 Python 진영의 pyenv, Node 진영의 nvm 등과 유사한 툴
+
+> homebrew 이용해 설치
+```
+$ brew install jenv
+```
+
+<br>
+
+> PATH 설정
+```
+$ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+$ echo 'eval "$(jenv init -)"' >> ~/.zshrc
+```
+
+<br>
+
+> 변경사항 반영
+```
+$ source ~/.zshrc
+```
+
+<br>
+
+> Export Plugin 설정
+```
+$ jenv enable-plugin export
+```
+
+<br>
+
+> 설치 확인
+```
+$ jenv
+```
+- jenv를 입력했을 때 버전정보와 함께 명령어가 출력되면 정상적으로 설치된 것
+
+<br>
+
+### 2. Java 설치
+
+> homebrew 저장소에서 설치가능한 JDK 검색
+```
+$ brew search jdk
+>
+openjdk           openjdk@11        openjdk@17       openjdk@8         jd                mdk               cdk
+```
+
+<br>
+
+> 17 버전 선택해 설치
+```
+$ brew install openjdk@17
+```
+
+<br>
+
+#### 💡 openjdk@8 설치 시 오류
+```
+openjdk@8: The x86_64 architecture is required for this software.
+Error: openjdk@8: An unsatisfied requirement failed this build.
+```
+- openJDK 8 설치 시 Apple Silicon Chip에서는 오류 발생
+
+  - azul 등 다른 JDK 이용해 설치
+
+<br>
+
+> Symbolic Link 작업
+```
+$ sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+```
+
+<br>
+
+> Symbolic Link 가 잘 연결됐는지 확인
+```
+$ ls /Library/Java/JavaVirtualMachines
+>
+openjdk-11.jdk     openjdk-17.jdk
+```
+
+<br>
+
+> jenv에 설치한 JDK 등록
+```
+$ jenv add /Library/Java/JavaVirtualMachines/[JDK version name]/Contents/Home/
+```
+- JDK version name 부분에 해당하는 버전 기재 (ex. openjdk-17.jdk)
+
+<br>
+
+### 3. 사용 방법
+> 설치된 Java 버전 확인
+```
+$ jenv versions
+>
+* system (set by /Users/geun/.jenv/version)
+  11.0
+  11.0.17
+  17.0
+  17.0.5
+  openjdk64-11.0.17
+  openjdk64-17.0.5
+```
+
+<br>
+
+> 원하는 버전을 전역으로 사용
+```
+$ jenv global {JAVA_VERSION}
+```
+- {} 부분에 활성화할 Java 버전 입력
+
+<br>
+
+> 특정 위치에서만 사용하기
+```
+$ jenv local {JAVA_VERSION}
+```
+- {} 부분에 활성화할 Java 버전 입력
+
+<Br>
+
 ---
 
 <Br>
 
+# 이클립스
 이클립스 설치 - 4.35
 ---
 ### 1. [이클립스](https://www.eclipse.org/downloads/packages/) 접속하여 파일 다운로드 및 설치
@@ -305,5 +433,6 @@ brew uninstall <패키지 이름> - 해당 패키지 삭제
 
 <br>
 
+# 전자정부프레임워크
 전자정부프레임워크 - 
 ---
