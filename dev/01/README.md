@@ -1,5 +1,5 @@
 # IDE 설치 - ECLIPSE
-JAVA 설치 - JDK21
+JAVA 설치(홈페이지) - JDK21
 ---
 ### 1. [Oracle](https://www.oracle.com/kr/java/technologies/downloads/#jdk21-mac) 접속하여 파일 다운로드 및 설치
 
@@ -139,10 +139,171 @@ echo $JAVA_HOME
 
 <br>
 
+---
 
+<br>
 
+JAVA 설치(HOME BREW) - JDK1.8
+---
+### 1. [홈브류 홈페이지](https://brew.sh) 접속 후 Install Homebrew 명령어 복사
 
+|brew|
+|-|
+|![image](./img/21.png)|
 
+<br>
 
+### 2. 터미널에서 실행 후 맥북 비밀번호 입력 후 엔터
+> 명령어
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
+|brew|
+|-|
+|![image](./img/22.png)|
+|![image](./img/23.png)|
 
+<br>
+
+### 3. 경로 설정
+
+|brew|
+|-|
+|![image](./img/24.png)|
+
+> Next steps 의 명령어 추가 실행
+```
+echo >> /Users/사용자명/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/사용자명/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+<br>
+
+### 4. 설치 확인
+
+|brew|
+|-|
+|![image](./img/25.png)|
+
+> 명령어
+```
+brew --version
+```
+
+<br>
+
+### 5. JAVA8 설치를 위한 명령어 입력
+> Apple Silicon 인지 Intel인지 확인
+```
+arch
+```
+- arm64면 Apple Silicon, i386이면 Intel
+
+<br>
+
+> Rosetta 2 설치 (Apple Silicon Mac의 경우)
+```
+softwareupdate --install-rosetta --agree-to-license
+```
+
+<br>
+
+> temurin@8 설치
+```
+brew install --cask temurin@8
+```
+
+<br>
+
+> 설치 확인
+```
+/usr/libexec/java_home -V
+```
+
+|brew|
+|-|
+|![image](./img/26.png)|
+
+<br>
+
+> JAVA_HOME 환경 변수 설정
+```
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+```
+
+<br>
+
+#### 💡 홈브류 기본 명령어
+> 홈브류
+```
+brew update - brew 업데이트
+brew search <패키지 이름> - 해당 패키지 검색
+brew install <패키지 이름> - 해당 패키지 설치
+```
+
+<br>
+
+> 확인
+```
+brew list - 설치 된 패키지 리스트 확인
+brew info <패키지 이름> - 해당 패키지 상세 정보 확인
+```
+
+<br>
+ 
+> 업그레이드 (업데이트)
+```
+brew outdated - 업데이트가 필요한 패키지 찾아보기
+brew upgrade - 패키지 전체 업데이트
+brew upgrade <패키지 이름> - 해당 패키지 업데이트
+```
+
+<br>
+
+> 삭제
+```
+brew cleanup <패키지 이름> - 여러 개의 버전이 있을 때, 가장 최신 버전만 살리고 나머지는 삭제
+brew uninstall <패키지 이름> - 해당 패키지 삭제
+```
+
+>> 홈브류 완전 삭제
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh"
+```
+
+<br>
+
+---
+
+<Br>
+
+이클립스 설치 - 4.35
+---
+### 1. [이클립스](https://www.eclipse.org/downloads/packages/) 접속하여 파일 다운로드 및 설치
+|Eclipse IDE for Enterprise Java and Web Developers|
+|-|
+|![image](./img/15.png)|
+|![image](./img/16.png)|
+|![image](./img/17.png)|
+|![image](./img/18.png)|
+|![image](./img/19.png)|
+
+<Br>
+
+### 2. 바탕화면에 생긴 Eclipse 을 없애기
+> 마우스우클릭 → 'Eclipse' 추출 클릭하여 추출
+
+|Eclipse IDE for Enterprise Java and Web Developers|
+|-|
+|![image](./img/20.png)|
+
+<br>
+
+---
+
+<br>
+
+전자정부프레임워크 - 
+---
