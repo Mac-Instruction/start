@@ -540,6 +540,7 @@ cd /opt/homebrew/Cellar/tomcat@10/10.1.40/bin
 <br>
 
 ### 2. 프로그램 설치
+
 |eGov|
 |-|
 |![image](./img/29.png)|
@@ -550,7 +551,52 @@ cd /opt/homebrew/Cellar/tomcat@10/10.1.40/bin
 <br>
 
 ### 3. 테스트 프로젝트 생성
+- 이클립스 실행 후 우측 상단의 perspective 창 (돋보기 아이콘 옆) 오픈 후 eGovFrame 선택
 
+- file > new > eGovFrame Web Project
+
+- 프로젝트명과 groupId 적고 next, Generate Example 선택하고 Finish
+
+<Br>
+
+|eGov|
+|-|
+|![image](./img/36.png)|
+|![image](./img/37.png)|
+|![image](./img/38.png)|
+|![image](./img/39.png)|
+|![image](./img/40.png)|
+
+<br>
+
+### 4. 톰캣 서버 연결
+- 하단 Server 탭에서 No servers are available.~ 클릭
+
+- 본인이 가지고 있는 톰캣 버전 선택
+
+  - 서버 설치해뒀다면 runtime environment 자동 셋팅
+
+- Tomcat installation directory에 톰캣 경로 지정 후 Finish
+
+  - libexec 폴더와 연결해줘야 정상 작동
+
+- 서버 설치가 완료되면 설치된 톰캣 서버를 더블 클릭하여 포트 번호 수정
+
+  - 톰캣 8080 포트 충돌 방지
+ 
+- 서버 실행 후 작동 확인
+
+<Br>
+
+|Server|
+|-|
+|![image](./img/41.png)|
+|![image](./img/42.png)|
+|![image](./img/43.png)|
+|![image](./img/44.png)|
+|![image](./img/45.png)|
+|![image](./img/46.png)|
+|![image](./img/47.png)|
 
 <br>
 
