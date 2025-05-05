@@ -418,6 +418,88 @@ JAVA 설치(apple) - JDK1.6
 
 <Br>
 
+# Tomcat
+톰캣 설치(homebrew) - 10.1
+---
+### 1. homebrew 업데이트 및 tomcat 찾기
+> 홈브류 업데이트
+```
+brew update
+```
+
+<br>
+
+> 톰캣 검색
+```
+brew search tomcat
+```
+- 초록 체크 표시가 있다면 이미 설치되어 있는 프로그램
+
+<br>
+
+|톰캣 검색 결과|
+|-|
+|![image](./img/48.png)|
+
+<br>
+
+### 2. tomcat 설치
+> 설치
+```
+brew install tomcat@10
+```
+- 원하는 버전 선택하여 명령어 입력
+
+- Summary 아래 주소는 설치경로로 앞으로 자주 쓸테니 메모해두기
+
+<br>
+
+|톰캣 설치 결과|
+|-|
+|![image](./img/49.png)|
+
+<br>
+
+### 3. 실행 및 종료
+> 톰캣 설치 경로 내 bin 폴더로 이동
+```
+cd /opt/homebrew/Cellar/tomcat@10/10.1.40/bin
+```
+
+<br>
+
+> catalina 실행
+```
+./catalina start
+```
+- 잘 안된다면 파일로 직접 들어가 경로 확인하고 폴더 내 catalina 파일 유무 확인
+
+  - Finder 에서 command + shift + G(경로 입력 창) 열어서 경로 복붙
+
+- 실행되었다면 `localhost:8080` 접속하여 톰캣페이지 확인
+
+<br>
+
+> catalina 종료
+```
+./catalina stop
+```
+- `localhost:8080` 접속시 로그인 창 or 연결할 수 없다고 뜨면 정상적으로 종료된 것
+
+<Br>
+
+|톰캣 실행 및 종료|
+|-|
+|![image](./img/50.png)|
+|![image](./img/51.png)|
+|![image](./img/52.png)|
+
+<br>
+
+---
+
+<br>
+
 # 이클립스
 이클립스 설치 - 4.35
 ---
@@ -457,13 +539,18 @@ JAVA 설치(apple) - JDK1.6
 
 <br>
 
-### 2. 
+### 2. 프로그램 설치
 |eGov|
 |-|
 |![image](./img/29.png)|
 |![image](./img/30.png)|
 |![image](./img/31.png)|
 |![image](./img/32.png)|
+
+<br>
+
+### 3. 테스트 프로젝트 생성
+
 
 <br>
 
