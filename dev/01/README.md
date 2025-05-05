@@ -402,6 +402,18 @@ $ jenv local {JAVA_VERSION}
 
 <Br>
 
+JAVA 설치(apple) - JDK1.6
+---
+### 1. [애플](https://support.apple.com/ko-kr/106384)에서 OS X용 Java 이전 버전 다운로드
+
+|-|
+|-|
+|![image](./img/33.png)|
+|![image](./img/34.png)|
+|![image](./img/35.png)|
+
+<br>
+
 ---
 
 <Br>
@@ -434,5 +446,27 @@ $ jenv local {JAVA_VERSION}
 <br>
 
 # 전자정부프레임워크
-전자정부프레임워크 - 
+전자정부프레임워크 - 4.3
 ---
+### 1. [전자정부프레임워크 홈페이지](https://www.egovframe.go.kr/home/sub.do?menuNo=94) 접속 후 원하는 버전 다운로드
+
+|eGov|
+|-|
+|![image](./img/27.png)|
+|![image](./img/28.png)|
+
+<br>
+
+### 2. 
+|eGov|
+|-|
+|![image](./img/29.png)|
+|![image](./img/30.png)|
+|![image](./img/31.png)|
+|![image](./img/32.png)|
+
+<br>
+
+---
+
+<br>
